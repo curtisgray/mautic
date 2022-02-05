@@ -22,7 +22,6 @@ ob_start();
     line-height: 1.1;
 
     .mf-inner-container {
-        margin-top: 20px;
     }
 
     a.mf-link, .mauticform-button, .mauticform-pagebreak {

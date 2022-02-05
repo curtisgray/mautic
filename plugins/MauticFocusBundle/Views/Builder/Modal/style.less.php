@@ -15,27 +15,27 @@
     opacity: 1;
     z-index: 2000;
     margin: auto;
-    padding: 45px;
-    border-radius: 4px;
-    border-width: 6px 1px 1px 1px;
-    border-style: solid;
-    background: #fff;
+    padding: 3em;
     width: 40em;
     max-width: 40em;
     text-align: center;
 
     .mf-content {
-        margin-bottom: 30px;
-
         .mf-headline {
-            font-size: 1.6em;
-            font-weight: 600;
+            font-size: 1.7em;
+            font-weight: bold;
+            background-color: #fff;
+            padding: 0.25em;
+            margin: 0.75em 0;
+            color: #b00;
+            display: inline-block;
+            text-transform: uppercase;
         }
 
         .mf-tagline {
-            font-size: 1.2em;
+            font-size: 1.25em;
             font-weight: normal;
-            margin-top: 4px;
+            margin-bottom: 1em;
         }
 
         a.mf-link {
@@ -45,17 +45,28 @@
             margin: auto;
             font-size: 1.2em;
         }
+
+        label {
+            font-size: 1em;
+            display: block ;
+            max-width: initial;
+            margin-bottom: initial;
+            text-align: left;
+        }
+
+        .mauticform-page-wrapper .mauticform-row:last-child {
+            text-align: left;
+        }
     }
 
     .mf-modal-close {
         position: absolute;
         top: 0;
-        right: 8px;
+        right: 1em;
 
         a {
-            font-size: 1.4em;
-            color: #757575;
-            opacity: .4;
+            font-size: 1.6em;
+            color: #ffffff;
             text-decoration: none;
         }
 
@@ -65,7 +76,22 @@
         }
     }
 
-    .mauticform-input, .mauticform-row select, .mauticform-button, .mauticform-pagebreak {
+    .mauticform-input, .mauticform-row select {
+        color: #757575;
+        border: 1px solid #ababab;
+        width: 100%;
+        padding: 0.5em 0.75em;
+        margin: 0.5em 0 1em;
+        display: inline-block;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .mauticform-button {
+        height: 3em;
+    }
+
+    .mauticform-pagebreak {
         width: 75%;
         height: 35px;
         margin-bottom: 5px;

@@ -13,12 +13,7 @@ $style     = $focus['style'];
 $placement = (isset($props[$style]['placement'])) ? str_replace('_', '-', $props[$style]['placement']) : false;
 $animate   = (!empty($preview) && !empty($props['animate'])) ? ' mf-animate' : '';
 ?>
-    <style scoped>
-        .mf-<?php echo $style; ?> {
-            border-color: #<?php echo $props['colors']['primary']; ?>
-        }
-    </style>
-    <div class="mautic-focus mf-<?php echo $style; ?><?php if ($placement) {
+    <div style="background-color: #<?php echo $props['colors']['primary']; ?>;"  class="mautic-focus mf-<?php echo $style; ?><?php if ($placement) {
     echo " mf-$style-$placement";
 } ?><?php echo $animate; ?>">
         <div class="mf-<?php echo $style; ?>-container">
