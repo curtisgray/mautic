@@ -152,7 +152,7 @@ class FormType extends AbstractType
         $builder->add('renderStyle', YesNoButtonGroupType::class, [
             'label'      => 'mautic.form.form.renderstyle',
             'data'       => (null === $options['data']->getRenderStyle()) ? true : $options['data']->getRenderStyle(),
-            'empty_data' => true,
+            // 'empty_data' => true,
             'attr'       => [
                 'tooltip' => 'mautic.form.form.renderstyle.tooltip',
             ],
